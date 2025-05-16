@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 277 67% 96%; /* #F8F1FA - Light Purple for body, header, footer */
+    --foreground: 270 8% 25%; /* Dark grayish purple for text */
+    
+    /* Updated content background to #50196F (dark purple) */
+    --content-background: 278 63% 27%; 
+    /* New foreground for text directly on the new dark content background */
+    --content-foreground: 277 70% 93%;
+    /* New muted foreground for text directly on the new dark content background */
+    --content-muted-foreground: 277 50% 75%;
+
+    --card: 277 60% 95%;
+    --card-foreground: 270 8% 25%;
+
+    --popover: 277 60% 93%;
+    --popover-foreground: 270 8% 25%;
+
+    --primary: 283 44% 81%; /* #E0BBE4 */
+    --primary-foreground: 283 20% 30%;
+
+    --secondary: 277 50% 90%;
+    --secondary-foreground: 270 8% 25%;
+
+    --muted: 277 50% 92%;
+    --muted-foreground: 270 8% 45%; /* Body's muted foreground */
+
+    --accent: 196 53% 78%; /* #A9D6E5 */
+    --accent-foreground: 196 30% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 277 40% 88%;
+    --input: 277 40% 90%;
+    --ring: 196 53% 78%;
+
+    --radius: 0.5rem;
+
+    /* Variables for sidebar (though sidebar is being removed, keeping for potential future use if ui/sidebar is re-added by user) */
+    --sidebar-background: 277 67% 97%;
+    --sidebar-foreground: 270 8% 30%;
+    --sidebar-primary: 283 44% 75%;
+    --sidebar-primary-foreground: 283 20% 25%;
+    --sidebar-accent: 196 53% 75%;
+    --sidebar-accent-foreground: 196 30% 20%;
+    --sidebar-border: 277 40% 85%;
+    --sidebar-ring: 196 53% 78%;
+  }
+
+  .dark {
+    --background: 270 10% 15%; /* Dark Purple for body, header, footer */
+    --foreground: 277 60% 90%; /* Light purple text */
+
+    /* Updated content background for dark mode */
+    --content-background: 278 45% 20%; 
+    /* New content foreground for dark mode */
+    --content-foreground: 277 70% 90%;
+    /* New content muted foreground for dark mode */
+    --content-muted-foreground: 277 40% 70%;
+
+    --card: 270 10% 18%;
+    --card-foreground: 277 60% 90%;
+
+    --popover: 270 10% 12%;
+    --popover-foreground: 277 60% 90%;
+
+    --primary: 283 44% 70%;
+    --primary-foreground: 283 80% 95%;
+
+    --secondary: 270 10% 25%;
+    --secondary-foreground: 277 60% 90%;
+
+    --muted: 270 10% 22%;
+    --muted-foreground: 277 50% 70%; /* Body's muted foreground for dark mode */
+
+    --accent: 196 53% 68%;
+    --accent-foreground: 196 80% 95%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 270 10% 30%;
+    --input: 270 10% 30%;
+    --ring: 196 53% 68%;
+
+    /* Dark mode sidebar variables */
+    --sidebar-background: 270 10% 12%;
+    --sidebar-foreground: 277 60% 85%;
+    --sidebar-primary: 283 44% 65%;
+    --sidebar-primary-foreground: 283 80% 90%;
+    --sidebar-accent: 196 53% 65%;
+    --sidebar-accent-foreground: 196 80% 90%;
+    --sidebar-border: 270 10% 25%;
+    --sidebar-ring: 196 53% 68%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

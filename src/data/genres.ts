@@ -1,0 +1,20 @@
+
+export const videoGenres = [
+  { value: 'fantasy', label: 'Fantasy' },
+  { value: 'sci-fi', label: 'Sci-Fi' },
+  { value: 'action', label: 'Action' },
+  { value: 'horror', label: 'Horror' },
+  { value: 'documentary', label: 'Documentary' },
+  { value: 'adventure', label: 'Adventure' },
+  { value: 'romance', label: 'Romance' },
+  { value: 'comedy', label: 'Comedy' },
+  { value: 'drama', label: 'Drama' },
+  { value: 'thriller', label: 'Thriller' },
+  { value: 'animation', label: 'Animation' },
+  { value: 'musical', label: 'Musical' },
+  { value: 'history', label: 'History' },
+  { value: 'sports', label: 'Sports' },
+  { value: 'family', label: 'Family' },
+  { value: 'western', label: 'Western' },
+  { value: 'other', label: 'Other' },
+];
